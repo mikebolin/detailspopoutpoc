@@ -7,7 +7,7 @@ import { AutoCompleteComponent } from '@progress/kendo-angular-dropdowns';
   styleUrls: ['./invoice-details-popup.scss']
 })
 export class InvoiceDetailsPopup implements OnInit {
-  public toggleText: string = 'Invoice Data';
+  public toggleText: string = 'Invoice';
   public show: boolean = true;
   public get animate(): any {
     if (this.show) {
@@ -35,6 +35,6 @@ export class InvoiceDetailsPopup implements OnInit {
 
   public onToggle(): void {
     this.show = !this.show;
-    this.toggleText = this.show ? 'Invoice' : 'test';
+    this.toggleText = this.show ? 'Invoice' : 'Invoice';
   }
 }
