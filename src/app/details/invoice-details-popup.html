@@ -1,0 +1,25 @@
+<div class="example-config">
+  <button #anchor (mouseover)="onToggle()" (mouseout)="onToggle()" class="btn btn-primary btn-sm">
+    <i class="p-1 fas fa-info-circle" title="View Details"></i>{{ toggleText }}
+  </button>
+  <kendo-popup [anchor]="anchor" [animate]="animate" (anchorViewportLeave)="show = false" *ngIf="show">
+    <div class="content">
+      <table>
+        <tr>
+          <th>Invoice Type</th>
+          <th>Invoice Number></th>
+          <th>Status</th>
+          <th>Total</th>
+          <th>Invoice Date</th>
+        </tr>
+        <tr *ngFor="let invoiceItem of invoiceItems; let i = index">
+          <td>{{ invoiceItem.InoiceType }}</td>
+          <td>{{ invoiceItem.InvoiceNumber }}</td>
+          <td>{{ invoiceItem.Status }}</td>
+          <td>{{ invoiceItem.Total | currency }}</td>
+          <td>{{ invoiceItem.InvoiceDate | date }}</td>
+        </tr>
+      </table>
+    </div>
+  </kendo-popup>
+</div>
