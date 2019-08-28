@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-
-class InvoiceDetails {
-  InvoiceType: string;
-  InvoiceNumber: string;
-  Status: string;
-  Total: number;
-  InvoiceDate : Date;
-}
+import { InvoiceDetails } from '../details/invoice-details-model';
 
 @Component({
   selector: 'my-app',
