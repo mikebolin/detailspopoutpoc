@@ -1,16 +1,11 @@
-.content {
-  padding: 10px;
-  color: #787878;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
+
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 45%;
 }
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid #000000;
   text-align: left;
-  padding: 8px;
+  overflow: hidden;
+  padding: 4px;
 }
