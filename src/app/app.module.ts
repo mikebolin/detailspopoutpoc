@@ -10,8 +10,10 @@ import { PopupModule } from '@progress/kendo-angular-popup';
 
 import { InvoiceDetailsPopup } from './details/invoice-details-popup';
 
+    import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, PopupModule, BrowserAnimationsModule ],
+  imports:      [ BrowserModule, FormsModule, PopupModule, BrowserAnimationsModule, FontAwesomeModule ],
   declarations: [ AppComponent, HelloComponent, InvoiceDetailsPopup ],
   bootstrap:    [ AppComponent ]
 })

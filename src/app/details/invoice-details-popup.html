@@ -1,7 +1,9 @@
 <div class="example-config">
-  <button #anchor (click)="onToggle()" class="btn btn-primary btn-sm">
-    <i class="p-1 fas fa-info-circle" title="View Details"></i>{{ toggleText }}
-  </button>
+
+<div  style="font-size: 25px;" #anchor (click)="onToggle()"  >
+ <i  class="fas fa-dollar-sign" title="Invoice Details" ></i> {{ toggleText }}
+</div>
+
   <kendo-popup [anchor]="anchor" [animate]="animate" (anchorViewportLeave)="show = false" *ngIf="show">
     <div class="content">
       <table>
