@@ -1,5 +1,5 @@
 <div class="example-config">
-  <button #anchor (mouseover)="onToggle()" (mouseout)="onToggle()" class="btn btn-primary btn-sm">
+  <button #anchor (click)="onToggle()" class="btn btn-primary btn-sm">
     <i class="p-1 fas fa-info-circle" title="View Details"></i>{{ toggleText }}
   </button>
   <kendo-popup [anchor]="anchor" [animate]="animate" (anchorViewportLeave)="show = false" *ngIf="show">
