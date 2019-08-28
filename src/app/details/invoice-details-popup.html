@@ -12,12 +12,12 @@
           <th>Total</th>
           <th>Invoice Date</th>
         </tr>
-        <tr *ngFor="let invoiceItem of invoiceItems; let i = index">
-          <td>{{ invoiceItem.InoiceType }}</td>
-          <td>{{ invoiceItem.InvoiceNumber }}</td>
-          <td>{{ invoiceItem.Status }}</td>
-          <td>{{ invoiceItem.Total | currency }}</td>
-          <td>{{ invoiceItem.InvoiceDate | date }}</td>
+        <tr>
+          <td>{{ invoiceItems.InvoiceType }}</td>
+          <td>{{ invoiceItems.InvoiceNumber }}</td>
+          <td>{{ invoiceItems.Status }}</td>
+          <td>{{ invoiceItems.Total | currency }}</td>
+          <td>{{ invoiceItems.InvoiceDate | date }}</td>
         </tr>
       </table>
     </div>

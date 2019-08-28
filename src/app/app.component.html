@@ -1,7 +1,17 @@
 <div class="content-container">
   <div class="row">
     <div class="col-4">
-<invoice-details   [invoiceItems]="details" ></invoice-details>
+<invoice-details   
+[invoiceItems]="details" 
+[animation]="'expand'" 
+[direction]="'down'" 
+[durationMS]="250" 
+[showButtonText]="'Show'" 
+[hideButtonText]="'Hide'" 
+>
+
+
+</invoice-details>
     </div>
     </div>
     </div>

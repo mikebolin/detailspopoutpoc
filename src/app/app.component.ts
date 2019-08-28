@@ -4,7 +4,7 @@ class InvoiceDetails {
   InvoiceType: string;
   InvoiceNumber: string;
   Status: string;
-  Total: string;
+  Total: number;
   InvoiceDate : Date;
 }
 
@@ -19,11 +19,11 @@ export class AppComponent  {
 
   constructor(){
     this.details = {
-      InvoiceType: 'test',
-      InvoiceNumber: 'test',
-      Status: 'test',
-      Total: 'test',
-      InvoiceDate: new Date()
+      InvoiceType: 'Customer',
+      InvoiceNumber: '60300440TF28',
+      Status: 'Approved',
+      Total: 639.97,
+      InvoiceDate: new Date('01/13/2019')
     } as InvoiceDetails;
   }
 
