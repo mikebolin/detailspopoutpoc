@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import { InvoiceDetails } from './details/invoice-details-model'
+
+class InvoiceDetails {
+  InvoiceType: string;
+  InvoiceNumber: string;
+  Status: string;
+  Total: string;
+  InvoiceDate : Date;
+}
 
 @Component({
   selector: 'my-app',
@@ -8,13 +15,18 @@ import { InvoiceDetails } from './details/invoice-details-model'
 })
 export class AppComponent  {
   name = 'Angular';
+  details: InvoiceDetails;
 
-    const obj = {
-      InvoiceType: this.shipment.carrierInvoices[0].invoiceId,
-      InvoiceNumber: newValue.fullName,
+  constructor(){
+    this.details = {
+      InvoiceType: 'test',
+      InvoiceNumber: 'test',
       Status: 'test',
       Total: 'test',
       InvoiceDate: new Date()
     } as InvoiceDetails;
+  }
+
+
   
 }

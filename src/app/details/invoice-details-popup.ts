@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, ViewChild } from '@angular/core';
 import { AutoCompleteComponent } from '@progress/kendo-angular-dropdowns';
-
+import { InvoiceDetails } from './invoice-details-model'
 @Component({
   selector: 'invoice-details',
   templateUrl: './invoice-details-popup.html',
@@ -19,15 +19,7 @@ export class InvoiceDetailsPopup implements OnInit {
     }
     return false;
   }
-  public invoiceItems: any[] = [
-    {
-      InoiceType: 'Customer',
-      InvoiceNumber: '60300440TF28',
-      Status: 'Approved',
-      Total: 639.97,
-      InvoiceDate: '01/13/2019'
-    }
-  ];
+  @Input() invoiceItems: InvoiceDetails;
 
   ngOnInit() {
     this.show = false;
@@ -37,4 +29,5 @@ export class InvoiceDetailsPopup implements OnInit {
     this.show = !this.show;
     this.toggleText = this.show ? 'Invoice' : 'Invoice';
   }
+  
 }
